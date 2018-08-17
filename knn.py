@@ -3,6 +3,14 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cross_validation import train_test_split
+"""  UPDATE:- 
+    as per SciKit Learn 0.18 , 
+    from sklearn.cross_validation import train_test_split
+    has been changed to :
+    from sklearn.model_selection import train_test_split
+    
+    You can still use the older method, you'll just get a warning message notifying you of the change.
+"""    
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.cross_validation import cross_val_score
